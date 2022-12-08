@@ -12,18 +12,19 @@ namespace TomatoClocker.Models
 
         public DayCount DayCount { get; set; }
 
-        public DateTime StartDateTime { get; set; }
+        public string StartDateTime { get; set; }
 
-        public DateTime? EndDateTime { get; set; }
+        public string? EndDateTime { get; set; }
 
         public string? PlanContent { get; set; }
-
-        public string? DoContent { get; set; }
 
         public string? FailedReason { get; set; }
 
         public string? Remark { get; set; }
 
         public double ContinuousTime { get; set; }
+
+        public DateTime CreateTime { get; set; }
+
     }
 }

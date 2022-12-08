@@ -10,9 +10,11 @@ namespace TomatoClocker.Models
     {
         public int Id { get; set; }
 
-        public DateTime Date { get; set; }
+        public string Date { get; set; }
 
         public int Count { get; set; }
+
+        public DateTime CreateTime { get; set; }
 
         public List<FailedItem> FailedItems { get; set; } = new List<FailedItem>();
 

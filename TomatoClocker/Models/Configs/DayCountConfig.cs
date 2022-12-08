@@ -13,6 +13,7 @@ namespace TomatoClocker.Models.Configs
         public void Configure(EntityTypeBuilder<DayCount> builder)
         {
             builder.ToTable("T_DayCount");
+            builder.HasKey(x => x.Id);
         }
     }
 }

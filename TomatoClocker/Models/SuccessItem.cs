@@ -12,9 +12,9 @@ namespace TomatoClocker.Models
 
         public DayCount DayCount { get; set; }
 
-        public DateTime StartDateTime { get; set; }
+        public string StartDateTime { get; set; }
 
-        public DateTime? EndDateTime { get; set; }
+        public string? EndDateTime { get; set; }
 
         public string? PlanContent { get; set; }
 
@@ -23,5 +23,8 @@ namespace TomatoClocker.Models
         public string? Remark { get; set; }
 
         public double ContinuousTime { get; set; }
+
+        public DateTime CreateTime { get; set; } 
+
     }
 }
